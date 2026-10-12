@@ -49,7 +49,7 @@ if ('animate' in Element.prototype && !matchMedia('(prefers-reduced-motion: redu
   --card-veil:rgba(130,130,130,.08);
   --sans:"Geist",ui-sans-serif,system-ui,-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;
   --mono:"Geist Mono",ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
-  --grain:url(assets/grain.webp);
+  --grain:url(https://d2ol7oe51mr4n9.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/375d39bf-828b-48c3-b114-318c4893298e.webp);
 
   /* one design pixel. Fit the 1440×1024 artboard by its limiting side … */
   --vh:1vh;
@@ -151,7 +151,7 @@ img{display:block}
   display:grid;grid-template-columns:repeat(3,1fr);gap:calc(var(--u)*24.3);margin:0;padding:0;list-style:none}
 .card{position:relative;margin:0;overflow:hidden;border-radius:calc(var(--u)*16);background:#0f0f0f;
   transform:translateZ(0)}
-.card img{width:100%;height:100%;object-fit:cover;transition:transform .8s cubic-bezier(.2,.7,.2,1)}
+.card img,.card video{display:block;width:100%;height:100%;object-fit:cover;transition:transform .8s cubic-bezier(.2,.7,.2,1)}
 .card::before{content:"";position:absolute;inset:0;background:var(--card-veil);pointer-events:none}
 /* glass rim: a 1px stroke whose light falls in from the bottom-left and catches again top-right */
 .card::after{content:"";position:absolute;inset:0;border-radius:inherit;pointer-events:none;
@@ -290,7 +290,7 @@ html.menu-lock{overflow:hidden}
   .nav a:hover{color:#fff}
   .btn-call:hover,.btn--ghost:hover{background-color:rgba(255,255,255,.06)}
   .btn--primary:hover{background-color:var(--accent-hi)}
-  .card:hover img{transform:scale(1.03)}
+  .card:hover img,.card:hover video{transform:scale(1.03)}
 }
 @media (prefers-reduced-motion: reduce){ *{transition:none!important} }
 /* The stage remains still; only the opening foreground is held before its one entrance. */
@@ -336,9 +336,9 @@ html.menu-lock{overflow:hidden}
   </main>
 
   <ul class="cards" id="systems" aria-label="Featured work">
-    <li class="card"><img src="assets/eye.webp" alt="Close-up of an eye crossed by streaks of orange and blue light" width="1058" height="1152" decoding="async"></li>
-    <li class="card"><figure style="margin:0;height:100%"><img src="assets/vr-headset.webp" alt="Figure wearing a VR headset dissolving into motion-blurred light" width="1058" height="1152" decoding="async"><figcaption>Where Thought Becomes Design</figcaption></figure></li>
-    <li class="card"><img src="assets/orb.webp" alt="A glowing orb of light levitating above an open hand" width="1058" height="1152" decoding="async"></li>
+    <li class="card"><video src="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20261012_092604_1292b1d5-0603-48c0-bbf8-a75a2d616fbc.mp4" poster="https://d2ol7oe51mr4n9.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/c108cfdb-893d-404c-a4e2-4d2e6af3ded0.webp" aria-label="Close-up of an eye crossed by streaks of orange and blue light" width="1058" height="1152" autoplay muted loop playsinline preload="auto"></video></li>
+    <li class="card"><figure style="margin:0;height:100%"><video src="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20261012_092604_3b64830d-70c2-4b81-a2ee-f617c4ebbd7c.mp4" poster="https://d2ol7oe51mr4n9.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/6262da14-954f-4fa0-a01b-a9aaa44ac7aa.webp" aria-label="Figure wearing a VR headset dissolving into motion-blurred light" width="1058" height="1152" autoplay muted loop playsinline preload="auto"></video><figcaption>Where Thought Becomes Design</figcaption></figure></li>
+    <li class="card"><video src="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20261012_092450_635941be-dbe7-4a93-bfca-eb939faa1b85.mp4" poster="https://d2ol7oe51mr4n9.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/f4b9a8b7-677b-4d8b-ad54-7d1a90270d10.webp" aria-label="A glowing orb of light levitating above an open hand" width="1058" height="1152" autoplay muted loop playsinline preload="auto"></video></li>
   </ul>
 
   <footer class="foot">
